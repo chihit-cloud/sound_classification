@@ -20,13 +20,15 @@
                 },
                 "layers": [
                     {
-                        "class_name": "InputLayer",
-                        "config": {
-                            "batch_input_shape": [null, 13, 100],  // 여기를 기존 input_shape에서 batch_input_shape로 수정
-                            "dtype": "float32",
-                            "sparse": false,
-                            "name": "input_layer_1"
-                        }
+                        {
+    "class_name": "InputLayer",
+    "config": {
+        "batch_input_shape": [null, 13, 100],  // input_shape 대신 batch_input_shape로 수정
+        "dtype": "float32",
+        "sparse": false,
+        "name": "input_layer_1"
+    }
+}
                     },
                     {
                         "class_name": "Conv1D",
